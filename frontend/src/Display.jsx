@@ -11,6 +11,7 @@ const Display=()=>{
 
         })
     }
+    //niyitn
 
     useEffect(()=>{
         loadData();
