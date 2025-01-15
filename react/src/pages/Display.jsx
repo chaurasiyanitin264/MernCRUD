@@ -37,6 +37,7 @@ const Display = () => {
             <tr>
               <th>Emp Id</th>
               <th>Emp Name</th>
+              {/* <th>Emp City</th> */}
               <th>Emp City</th>
               <th>Emp Salary</th>
             </tr>
