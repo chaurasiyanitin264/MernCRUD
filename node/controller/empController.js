@@ -8,6 +8,7 @@ const DataSave=async(req,res)=>{
         emp_name:name,
         emp_city:city,
         emp_sallary:sallary
+        //emp_sallary:sallary
     })
 res.send("ok");
 }
