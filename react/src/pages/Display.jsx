@@ -19,10 +19,10 @@ const Display = () => {
 
   const ans = mydata.map((key, index) => (
     <tr key={index}>
-      <td>{key.empid}</td>
-      <td>{key.name}</td>
-      <td>{key.city}</td>
-      <td>{key.sallary}</td>
+      <td>{key.emp_id}</td>
+      <td>{key.emp_name}</td>
+      <td>{key.emp_city}</td>
+      <td>{key.emp_sallary}</td>
     </tr>
   ));
 
@@ -33,7 +33,7 @@ const Display = () => {
       </center>
       <div className="table-responsive">
         <Table className="table table-striped table-bordered">
-          <thead>
+          <thead className="table-primary">
             <tr>
               <th>Emp Id</th>
               <th>Emp Name</th>

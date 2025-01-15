@@ -1,21 +1,21 @@
 const mongoose = require("mongoose");
 
 const empSchema = new mongoose.Schema({
-    empid: {
+    emp_id: {
         type: Number,
         min:1,
         max:999,
         required: true 
     },
-    name: {
+    emp_name: {
         type: String,
         required: true 
     },
-    city: {
+    emp_city: {
         type: String,
         required: true 
     },
-    sallary: {
+    emp_sallary: {
         type: Number,
        require:true 
     }

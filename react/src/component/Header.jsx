@@ -1,10 +1,15 @@
 const Header = () => {
     return (
+      
         <>
-            <center>
-                <h4>Employee DshBoard</h4>
-            </center>
+        <h3 style={{padding:"10px"}}>
+           <center>
+           Employee ManageMent
+           </center>
+        </h3>
         </>
+      
     )
 }
+
 export default Header;
