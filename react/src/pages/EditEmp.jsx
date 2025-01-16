@@ -90,12 +90,13 @@ import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useParams } from 'react-router-dom';
 import { message } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 
 const EditEmp = () => {
   const { id } = useParams();
   const [input, setInput] = useState({});
-
+  const navigate=useNavigate();
 
   const loadData = () => {
     let api = "http://localhost:8000/employee/editdataemp";
@@ -122,6 +123,7 @@ const EditEmp = () => {
     let api = "http://localhost:8000/employee/empdatasave";
     axios.post(api, input).then((res) => {
       message.success("data updated");
+      navigate("/Update")
     })
   }
 
