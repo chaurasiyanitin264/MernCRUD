@@ -33,6 +33,7 @@ const Insert = () => {
               <Form.Label>Employee ID</Form.Label>
               <Form.Control 
                 type="text" 
+                 className='inputsize'
                 name="empid" 
                 value={input.empid || ""} 
                 placeholder="Enter Employee ID" 
@@ -43,6 +44,7 @@ const Insert = () => {
               <Form.Control 
                 type="text" 
                 name="name" 
+                 className='inputsize'
                 value={input.name || ""} 
                 placeholder="Enter Employee Name" 
                 onChange={handleInput} />
@@ -51,6 +53,7 @@ const Insert = () => {
               <Form.Label>Enter City</Form.Label>
               <Form.Control 
                 type="text" 
+                 className='inputsize'
                 name="city" 
                 value={input.city || ""} 
                 placeholder="Enter Employee City" 
@@ -60,6 +63,7 @@ const Insert = () => {
               <Form.Label>Enter Salary</Form.Label>
               <Form.Control 
                 type="text" 
+                 className='inputsize'
                 name="sallary" 
                 value={input.sallary || ""} 
                 placeholder="Enter Employee Salary" 
