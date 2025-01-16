@@ -89,6 +89,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useParams } from 'react-router-dom';
+import { message } from 'antd';
 
 
 const EditEmp = () => {
@@ -120,7 +121,7 @@ const EditEmp = () => {
   const handleSubmit = () => {
     let api = "http://localhost:8000/employee/empdatasave";
     axios.post(api, input).then((res) => {
-      alert("data update successfully");
+      message.success("data update successfully");
     })
   }
 
