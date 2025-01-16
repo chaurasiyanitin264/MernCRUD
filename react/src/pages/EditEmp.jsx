@@ -121,7 +121,7 @@ const EditEmp = () => {
   const handleSubmit = () => {
     let api = "http://localhost:8000/employee/empdatasave";
     axios.post(api, input).then((res) => {
-      message.success("data update successfully");
+      message.success("data updated");
     })
   }
 
