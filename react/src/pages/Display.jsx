@@ -6,7 +6,7 @@ const Display = () => {
   const [mydata, setMydata] = useState([]);
 
   const loadData = () => {
-    const api = "http://localhost:8000/employee/displaydata";
+    const api = "https://merncrud-2.onrender.com/employee/displaydata";
     axios.get(api).then((res) => {
       console.log(res.data);
       setMydata(res.data);

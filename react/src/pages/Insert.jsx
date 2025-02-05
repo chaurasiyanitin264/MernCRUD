@@ -14,7 +14,7 @@ const Insert = () => {
   };
 
   const handleSubmit = () => {
-    let api = "http://localhost:8000/employee/datasave";
+    let api = "https://merncrud-2.onrender.com/employee/datasave";
     axios.post(api, input).then((res) => {
       message.success("Data saved successfully!");
       setInput({}); // Clear the form

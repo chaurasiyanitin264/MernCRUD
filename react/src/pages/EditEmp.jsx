@@ -14,7 +14,7 @@ const EditEmp = () => {
   const navigate=useNavigate();
 
   const loadData = () => {
-    let api = "http://localhost:8000/employee/editdataemp";
+    let api = "https://merncrud-2.onrender.com/employee/editdataemp";
     axios.post(api, { id: id }).then((res) => {
       // console.log(res.data);
       setInput(res.data);
@@ -35,7 +35,7 @@ const EditEmp = () => {
   }
 
   const handleSubmit = () => {
-    let api = "http://localhost:8000/employee/empdatasave";
+    let api = "https://merncrud-2.onrender.com/employee/empdatasave";
     axios.post(api, input).then((res) => {
       message.success("data updated");
       navigate("/Update")

@@ -12,7 +12,7 @@ const Search = () => {
     const handleSubmit = () => {
         setLoading(true);
         setError(""); // Reset error state
-        let api = "http://localhost:8000/employee/datasearch";
+        let api = "https://merncrud-2.onrender.com/employee/datasearch";
         axios
             .post(api, { empdata: empdata })
             .then((res) => {

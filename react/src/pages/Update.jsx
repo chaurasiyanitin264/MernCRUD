@@ -12,7 +12,7 @@ const UpDate = () => {
   const navigate = useNavigate();
 
   const loadData = () => {
-    const api = "http://localhost:8000/employee/displaydata";
+    const api = "https://merncrud-2.onrender.com/employee/displaydata";
     axios.get(api).then((res) => {
       setMydata(res.data);
     });
@@ -23,7 +23,7 @@ const UpDate = () => {
   }, []);
 
   const mydel = (id) => {
-    let api = "http://localhost:8000/employee/datadelete";
+    let api = "https://merncrud-2.onrender.com/employee/datadelete";
     axios.post(api, { id: id }).then((res) => {
       message.success("Data deleted");
       loadData();
