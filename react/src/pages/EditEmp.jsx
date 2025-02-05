@@ -79,7 +79,7 @@ const EditEmp = () => {
             <Form.Group className="mb-3" controlId="formSalary">
               <Form.Label>Enter Salary</Form.Label>
               <Form.Control
-                type="text"
+                type="number"
                 name="emp_sallary"
                 placeholder='Emp Sallary'
                 value={input.emp_sallary}
